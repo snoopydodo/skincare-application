@@ -47,11 +47,16 @@ import 'package:flutter/material.dart';
       
 
     Widget _myListView(BuildContext context) {
+      
       return ListView(
+        padding: const EdgeInsets.all(8),
         children: ListTile.divideTiles(
           context: context,
           tiles: [
-            ListTile(
+           Container(
+             height: 70,
+            color: Colors.cyan[50],
+             child: ListTile(
               leading: CircleAvatar(
                 backgroundImage: AssetImage('assets/product/1.png'),
               ),
@@ -66,7 +71,11 @@ import 'package:flutter/material.dart';
               
             },
             ),
-            ListTile(
+           ) ,
+           Container(
+             height: 70,
+            color: Colors.cyan[100],
+             child: ListTile(
               leading: CircleAvatar(
                 backgroundImage: AssetImage('assets/product/2.png'),
               ),
@@ -78,8 +87,11 @@ import 'package:flutter/material.dart';
               final snackBar = SnackBar(content: Text('total Price: $total'));
               Scaffold.of(context).showSnackBar(snackBar);
             },
-            ),
-            ListTile(
+            ),),
+            Container(
+             height: 70,
+            color: Colors.cyan[200],
+             child: ListTile(
               leading: CircleAvatar(
                 backgroundImage: AssetImage('assets/product/3.png'),
               ),
@@ -91,7 +103,11 @@ import 'package:flutter/material.dart';
               final snackBar = SnackBar(content: Text('total Price: $total'));
               Scaffold.of(context).showSnackBar(snackBar);
              },
-            ),
+            ),),
+            Container(
+             height: 70,
+            color: Colors.cyan[300],
+             child:
              ListTile(
                leading: CircleAvatar(
                  backgroundImage: AssetImage('assets/product/4.png'),
@@ -104,7 +120,11 @@ import 'package:flutter/material.dart';
               final snackBar = SnackBar(content: Text('total Price: $total'));
               Scaffold.of(context).showSnackBar(snackBar);
             },
-            ),
+            ),),
+            Container(
+             height: 70,
+            color: Colors.cyan[400],
+             child:
              ListTile(
                leading: CircleAvatar(
                  backgroundImage: AssetImage('assets/product/5.png'),
@@ -117,7 +137,11 @@ import 'package:flutter/material.dart';
               final snackBar = SnackBar(content: Text('total Price: $total'));
               Scaffold.of(context).showSnackBar(snackBar);
             },
-            ),
+            ),),
+            Container(
+             height: 70,
+            color: Colors.cyan,
+             child:
              ListTile(
                leading: CircleAvatar(
                  backgroundImage: AssetImage('assets/product/6.png'),
@@ -130,7 +154,11 @@ import 'package:flutter/material.dart';
               final snackBar = SnackBar(content: Text('total Price: $total'));
               Scaffold.of(context).showSnackBar(snackBar);
             },
-            ),
+            ),),
+            Container(
+             height: 70,
+            color: Colors.cyan[600],
+             child:
              ListTile(
                leading: CircleAvatar(
                  backgroundImage: AssetImage('assets/product/7.png'),
@@ -143,7 +171,11 @@ import 'package:flutter/material.dart';
               final snackBar = SnackBar(content: Text('total Price: $total'));
               Scaffold.of(context).showSnackBar(snackBar);
             },
-            ),
+            ),),
+            Container(
+             height: 70,
+            color: Colors.cyan[700],
+             child:
              ListTile(
                leading: CircleAvatar(
                  backgroundImage: AssetImage('assets/product/8.png'),
@@ -156,7 +188,11 @@ import 'package:flutter/material.dart';
               final snackBar = SnackBar(content: Text('total Price: $total'));
               Scaffold.of(context).showSnackBar(snackBar);
             },
-            ),
+            ),),
+            Container(
+             height: 70,
+            color: Colors.cyan[800],
+             child:
              ListTile(
                leading: CircleAvatar(
                  backgroundImage: AssetImage('assets/product/9.png'),
@@ -169,7 +205,11 @@ import 'package:flutter/material.dart';
               final snackBar = SnackBar(content: Text('total Price: $total'));
               Scaffold.of(context).showSnackBar(snackBar);
             },
-            ),
+            ),),
+            Container(
+             height: 70,
+            color: Colors.cyan[900],
+             child:
              ListTile(
                leading: CircleAvatar(
                  backgroundImage: AssetImage('assets/product/10.png'),
@@ -182,7 +222,11 @@ import 'package:flutter/material.dart';
               final snackBar = SnackBar(content: Text('total Price: $total'));
               Scaffold.of(context).showSnackBar(snackBar);
             },
-            ),
+            ),),
+            Container(
+             height: 70,
+            color: Colors.cyan[900],
+             child:
              ListTile(
                leading: CircleAvatar(
                  backgroundImage: AssetImage('assets/product/11.png'),
@@ -195,7 +239,11 @@ import 'package:flutter/material.dart';
               final snackBar = SnackBar(content: Text('total Price: $total'));
               Scaffold.of(context).showSnackBar(snackBar);
             },
-            ),
+            ),),
+            Container(
+             height: 70,
+            color: Colors.blueGrey[700],
+             child:
              ListTile(
                leading: CircleAvatar(
                  backgroundImage: AssetImage('assets/product/12.png'),
@@ -208,7 +256,11 @@ import 'package:flutter/material.dart';
               final snackBar = SnackBar(content: Text('total Price: $total'));
               Scaffold.of(context).showSnackBar(snackBar);
             },
-            ),
+            ),),
+            Container(
+             height: 70,
+            color: Colors.blueGrey[600],
+             child:
              ListTile(
                leading: CircleAvatar(
                  backgroundImage: AssetImage('assets/product/13.png'),
@@ -221,7 +273,11 @@ import 'package:flutter/material.dart';
               final snackBar = SnackBar(content: Text('total Price: $total'));
               Scaffold.of(context).showSnackBar(snackBar);
             },
-            ), ListTile(
+            ),),
+            Container(
+             height: 70,
+            color: Colors.blueGrey,
+             child: ListTile(
                leading: CircleAvatar(
                  backgroundImage: AssetImage('assets/product/14.png'),
                ),
@@ -233,7 +289,11 @@ import 'package:flutter/material.dart';
               final snackBar = SnackBar(content: Text('total Price: $total'));
               Scaffold.of(context).showSnackBar(snackBar);
             },
-            ),
+            ),),
+            Container(
+             height: 70,
+            color: Colors.blueGrey[400],
+             child:
              ListTile(
                leading: CircleAvatar(
                  backgroundImage: AssetImage('assets/product/15.png'),
@@ -246,7 +306,7 @@ import 'package:flutter/material.dart';
               final snackBar = SnackBar(content: Text('total Price: $total'));
               Scaffold.of(context).showSnackBar(snackBar);
             },
-            ),
+            ),),
           ],
         ).toList(),
 
