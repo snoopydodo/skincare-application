@@ -21,6 +21,7 @@ import 'package:flutter/material.dart';
     }
 
     class BodyLayout extends StatelessWidget {
+      
       @override
       Widget build(BuildContext context) {
         return _myListView(context);
@@ -59,7 +60,9 @@ import 'package:flutter/material.dart';
               trailing: Icon(Icons.plus_one),
               onTap: () {
               total += price1;
-              print('total Price: $total');
+              final snackBar = SnackBar(content: Text('total Price: $total'));
+              Scaffold.of(context).showSnackBar(snackBar);
+
               
             },
             ),
@@ -72,7 +75,8 @@ import 'package:flutter/material.dart';
               trailing: Icon(Icons.plus_one),
               onTap: () {
               total += price2;
-              print('total Price: $total');
+              final snackBar = SnackBar(content: Text('total Price: $total'));
+              Scaffold.of(context).showSnackBar(snackBar);
             },
             ),
             ListTile(
@@ -84,7 +88,8 @@ import 'package:flutter/material.dart';
               trailing: Icon(Icons.plus_one),
               onTap: () {
               total += price3;
-              print('total Price: $total');
+              final snackBar = SnackBar(content: Text('total Price: $total'));
+              Scaffold.of(context).showSnackBar(snackBar);
              },
             ),
              ListTile(
@@ -96,7 +101,8 @@ import 'package:flutter/material.dart';
               trailing: Icon(Icons.plus_one),
               onTap: () {
               total += price4;
-              print('total Price: $total');
+              final snackBar = SnackBar(content: Text('total Price: $total'));
+              Scaffold.of(context).showSnackBar(snackBar);
             },
             ),
              ListTile(
@@ -108,7 +114,8 @@ import 'package:flutter/material.dart';
               trailing: Icon(Icons.plus_one),
               onTap: () {
               total += price5;
-              print('total Price: $total');
+              final snackBar = SnackBar(content: Text('total Price: $total'));
+              Scaffold.of(context).showSnackBar(snackBar);
             },
             ),
              ListTile(
@@ -120,7 +127,8 @@ import 'package:flutter/material.dart';
               trailing: Icon(Icons.plus_one),
               onTap: () {
               total += price6;
-              print('total Price: $total');
+              final snackBar = SnackBar(content: Text('total Price: $total'));
+              Scaffold.of(context).showSnackBar(snackBar);
             },
             ),
              ListTile(
@@ -132,7 +140,8 @@ import 'package:flutter/material.dart';
               trailing: Icon(Icons.plus_one),
               onTap: () {
               total += price7;
-              print('total Price: $total');
+              final snackBar = SnackBar(content: Text('total Price: $total'));
+              Scaffold.of(context).showSnackBar(snackBar);
             },
             ),
              ListTile(
@@ -144,7 +153,8 @@ import 'package:flutter/material.dart';
               trailing: Icon(Icons.plus_one),
               onTap: () {
               total += price8;
-              print('total Price: $total');
+              final snackBar = SnackBar(content: Text('total Price: $total'));
+              Scaffold.of(context).showSnackBar(snackBar);
             },
             ),
              ListTile(
@@ -156,7 +166,8 @@ import 'package:flutter/material.dart';
               trailing: Icon(Icons.plus_one),
               onTap: () {
               total += price9;
-              print('total Price: $total');
+              final snackBar = SnackBar(content: Text('total Price: $total'));
+              Scaffold.of(context).showSnackBar(snackBar);
             },
             ),
              ListTile(
@@ -168,7 +179,8 @@ import 'package:flutter/material.dart';
               trailing: Icon(Icons.plus_one),
               onTap: () {
               total += price10;
-              print('total Price: $total');
+              final snackBar = SnackBar(content: Text('total Price: $total'));
+              Scaffold.of(context).showSnackBar(snackBar);
             },
             ),
              ListTile(
@@ -180,7 +192,8 @@ import 'package:flutter/material.dart';
               trailing: Icon(Icons.plus_one),
               onTap: () {
               total += price11;
-              print('total Price: $total');
+              final snackBar = SnackBar(content: Text('total Price: $total'));
+              Scaffold.of(context).showSnackBar(snackBar);
             },
             ),
              ListTile(
@@ -192,7 +205,8 @@ import 'package:flutter/material.dart';
               trailing: Icon(Icons.plus_one),
               onTap: () {
               total += price12;
-              print('total Price: $total');
+              final snackBar = SnackBar(content: Text('total Price: $total'));
+              Scaffold.of(context).showSnackBar(snackBar);
             },
             ),
              ListTile(
@@ -204,7 +218,8 @@ import 'package:flutter/material.dart';
               trailing: Icon(Icons.plus_one),
               onTap: () {
               total += price13;
-              print('total Price: $total');
+              final snackBar = SnackBar(content: Text('total Price: $total'));
+              Scaffold.of(context).showSnackBar(snackBar);
             },
             ), ListTile(
                leading: CircleAvatar(
@@ -215,7 +230,8 @@ import 'package:flutter/material.dart';
               trailing: Icon(Icons.plus_one),
               onTap: () {
               total += price14;
-              print('total Price: $total');
+              final snackBar = SnackBar(content: Text('total Price: $total'));
+              Scaffold.of(context).showSnackBar(snackBar);
             },
             ),
              ListTile(
@@ -227,7 +243,8 @@ import 'package:flutter/material.dart';
               trailing: Icon(Icons.plus_one),
               onTap: () {
               total += price15;
-              print('total Price: $total');
+              final snackBar = SnackBar(content: Text('total Price: $total'));
+              Scaffold.of(context).showSnackBar(snackBar);
             },
             ),
           ],
