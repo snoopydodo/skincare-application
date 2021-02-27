@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
-
+      int total =  0;
+      int price1 = 290;
+      int price2 = 990;
+      int price3 = 1190;
+      int price14 = 1200;
+      int price15 = 1300;
 class MyApp2 extends StatelessWidget {
   
   // This widget is the root of your application.
@@ -23,15 +28,22 @@ class MyApp2 extends StatelessWidget {
           fontWeight: FontWeight.normal
         ),),
               RaisedButton(
-                onPressed: () => {},
+                onPressed: () => {
+                  total += price1
+                },
                 color: Colors.green[300],
                 child: Text('buy', style: TextStyle(color: Colors.white),),
               ),
               RaisedButton(
-                onPressed: () => {},
+                onPressed: () => {
+                  total -= price1
+                },
+              
                 color: Colors.red[300],
                 child: Text('drop', style: TextStyle(color: Colors.white),),
               ),
+              //Text('total Price: $total'),
+
             ],
           )
         ),
@@ -63,13 +75,18 @@ class MyApp3 extends StatelessWidget {
           fontWeight: FontWeight.normal
         ),),
               RaisedButton(
-                onPressed: () => {},
+                onPressed: () => {
+                  total += price2
+                },
                 color: Colors.green[300],
                 child: Text('buy', style: TextStyle(color: Colors.white),),
               ),
               RaisedButton(
-                onPressed: () => {},
-                color: Colors.red,
+                onPressed: () => {
+                  total -= price2
+                },
+              
+                color: Colors.red[300],
                 child: Text('drop', style: TextStyle(color: Colors.white),),
               ),
             ],
@@ -101,14 +118,19 @@ class MyApp4 extends StatelessWidget {
             fontSize: 25,
           fontWeight: FontWeight.normal
         ),),
-              RaisedButton(
-                onPressed: () => {},
+             RaisedButton(
+                onPressed: () => {
+                  total += price3
+                },
                 color: Colors.green[300],
                 child: Text('buy', style: TextStyle(color: Colors.white),),
               ),
               RaisedButton(
-                onPressed: () => {},
-                color: Colors.red,
+                onPressed: () => {
+                  total -= price3
+                },
+              
+                color: Colors.red[300],
                 child: Text('drop', style: TextStyle(color: Colors.white),),
               ),
             ],
@@ -141,13 +163,18 @@ class MyApp5 extends StatelessWidget {
           fontWeight: FontWeight.normal
         ),),
               RaisedButton(
-                onPressed: () => {},
+                onPressed: () => {
+                  total += price14
+                },
                 color: Colors.green[300],
                 child: Text('buy', style: TextStyle(color: Colors.white),),
               ),
               RaisedButton(
-                onPressed: () => {},
-                color: Colors.red,
+                onPressed: () => {
+                  total -= price14
+                },
+              
+                color: Colors.red[300],
                 child: Text('drop', style: TextStyle(color: Colors.white),),
               ),
             ],
@@ -180,14 +207,19 @@ class MyApp6 extends StatelessWidget {
             fontSize: 25,
           fontWeight: FontWeight.normal
         ),),
-              RaisedButton(
-                onPressed: () => {},
+             RaisedButton(
+                onPressed: () => {
+                  total += price15
+                },
                 color: Colors.green[300],
                 child: Text('buy', style: TextStyle(color: Colors.white),),
               ),
               RaisedButton(
-                onPressed: () => {},
-                color: Colors.red,
+                onPressed: () => {
+                  total -= price15
+                },
+              
+                color: Colors.red[300],
                 child: Text('drop', style: TextStyle(color: Colors.white),),
               ),
             ],

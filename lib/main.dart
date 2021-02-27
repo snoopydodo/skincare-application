@@ -29,22 +29,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  var total = 0;
-  var price1 = 290;
-  var price2 = 990;
-  var price3 = 1190;
-  var price4 = 1300;
-  var price5 = 1400;
-  var price6 = 1300;
-  var price7 = 1100;
-  var price8 = 400;
-  var price9 = 199;
-  var price10 = 310;
-  var price11 = 1300;
-  var price12 = 2100;
-  var price13 = 890;
-  var price14 = 1200;
-  var price15 = 1300;
+ 
 
   @override
   Widget build(BuildContext context) {
