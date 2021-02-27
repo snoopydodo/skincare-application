@@ -1,317 +1,235 @@
 import 'package:flutter/material.dart';
+import 'package:hw4/next.dart';
 
-    void main() => runApp(MyApp());
+void main() => runApp(MyApp());
 
-    class MyApp extends StatelessWidget {
-      @override
-      Widget build(BuildContext context) {
-        return MaterialApp(
-          debugShowCheckedModeBanner: false,
-          title: 'Skinacare shop',
-          theme: ThemeData(
-            primarySwatch: Colors.teal,
-            scaffoldBackgroundColor: Color(0xFFE0F2F1),
-          ),
-          home: Scaffold(
-            appBar: AppBar(title: Text('La Roche-Posay Shop')),
-            body: BodyLayout(),
-          ),
-        );
-      }
-    }
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
 
-    class BodyLayout extends StatelessWidget {
-      
-      @override
-      Widget build(BuildContext context) {
-        return _myListView(context);
-      }
-    }
- 
-      int total =  0;
-      int price1 = 290;
-      int price2 = 990;
-      int price3 = 1190;
-      int price4 = 1300;
-      int price5 = 1400;
-      int price6 = 1300;
-      int price7 = 1100;
-      int price8 = 400;
-      int price9 = 199;
-      int price10 = 310;
-      int price11 = 1300;
-      int price12 = 2100;
-      int price13 = 890;
-      int price14 = 1200;
-      int price15 = 1300;
-      
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Skintoo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: MyHomePage(title: 'Skincare Shop'),
+    );
+  }
+}
 
-    Widget _myListView(BuildContext context) {
-      
-      return ListView(
-        padding: const EdgeInsets.all(8),
-        children: ListTile.divideTiles(
-          context: context,
-          tiles: [
-           Container(
-             height: 70,
-            color: Colors.cyan[50],
-             child: ListTile(
-              leading: CircleAvatar(
-                backgroundImage: AssetImage('assets/product/1.png'),
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  var total = 0;
+  var price1 = 290;
+  var price2 = 990;
+  var price3 = 1190;
+  var price4 = 1300;
+  var price5 = 1400;
+  var price6 = 1300;
+  var price7 = 1100;
+  var price8 = 400;
+  var price9 = 199;
+  var price10 = 310;
+  var price11 = 1300;
+  var price12 = 2100;
+  var price13 = 890;
+  var price14 = 1200;
+  var price15 = 1300;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+      body: SingleChildScrollView(
+        child: Container(
+          child: Column(
+            children: <Widget>[
+              Container(
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 15),
+                  height: MediaQuery.of(context).size.height * 0.16,
+                  child: Card(
+                    color: Colors.deepPurpleAccent[100],
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
+                    elevation: 8,
+                    child: InkWell(
+                      onTap:  () {
+                        Navigator.push(context,MaterialPageRoute(builder: (context){
+                          return MyApp2();
+                        },),);
+                        },
+                      child: Container(
+                        child: ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: AssetImage('assets/product/1.png'),
+                          ),
+                          title: Text('EFFACLAR GEL MOUSS T50ML F GB'),
+                          subtitle: Text('Price: ฿290'),
+
+                          //total += price1;
+                          //final snackBar = SnackBar(content: Text('total Price: $total'));
+                          //Scaffold.of(context).showSnackBar(snackBar);
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
               ),
-              title: Text('EFFACLAR GEL MOUSS T50ML F GB'),
-              subtitle: Text('Price: ฿290'),
-              trailing: Icon(Icons.plus_one),
-              onTap: () {
-              total += price1;
-              final snackBar = SnackBar(content: Text('total Price: $total'));
-              Scaffold.of(context).showSnackBar(snackBar);
-
+              Container(
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 15),
+                  height: MediaQuery.of(context).size.height * 0.16,
+                  child: Card(
+                    color: Colors.teal[100],
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
+                    elevation: 8,
+                    child: InkWell( onTap:  () {
+                        Navigator.push(context,MaterialPageRoute(builder: (context){
+                          return MyApp3();
+                        },),);
+                        },
+                        child: Container(
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage('assets/product/2.png'),
+                        ),
+                        title: Text('EFFACLAR DUO 40ML'),
+                        subtitle: Text('Price: ฿990'),
+                        //  trailing: Icon(Icons.add),
+                        
+                          // total += price2;
+                          //final snackBar = SnackBar(content: Text('total Price: $total'));
+                          //Scaffold.of(context).showSnackBar(snackBar);
+                        
+                      ),
+                    )
+                    ,)
+                    ,
+                  ),
+                ),
+              ),
+              Container(
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 15),
+                  height: MediaQuery.of(context).size.height * 0.16,
+                  child: Card(
+                    color: Colors.green[100],
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
+                    elevation: 8,
+                    child: InkWell(
+                      onTap:  () {
+                        Navigator.push(context,MaterialPageRoute(builder: (context){
+                          return MyApp4();
+                        },),);
+                        },
+                    child: Container(
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage('assets/product/3.png'),
+                        ),
+                        title: Text('EFFACLAR DUO(+) SPF30 40ML'),
+                        subtitle: Text('Price: ฿1,190'),
+                          //  total += price3;
+                          //final snackBar = SnackBar(content: Text('total Price: $total'));
+                          //Scaffold.of(context).showSnackBar(snackBar);
+                        
+                    ),
+                    ),
+                    ),
+                  ),
+                ),
+              ),
               
-            },
-            ),
-           ) ,
-           Container(
-             height: 70,
-            color: Colors.cyan[100],
-             child: ListTile(
-              leading: CircleAvatar(
-                backgroundImage: AssetImage('assets/product/2.png'),
+              Container(
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 15),
+                  height: MediaQuery.of(context).size.height * 0.16,
+                  child: Card(
+                    color: Colors.yellowAccent[200],
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
+                    elevation: 8,
+                    child: InkWell(
+                      onTap:  () {
+                        Navigator.push(context,MaterialPageRoute(builder: (context){
+                          return MyApp5();
+                        },),);
+                        },
+                    child: Container(
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage('assets/product/14.png'),
+                        ),
+                        title: Text('EFFACLAR PURIFYING GEL 400ML'),
+                        subtitle: Text('Price: ฿1,200'),
+                        //     trailing: Icon(Icons.add),
+                        
+                          //     total += price14;
+                          //   final snackBar = SnackBar(content: Text('total Price: $total'));
+                          //   Scaffold.of(context).showSnackBar(snackBar);
+                      ),
+                      ),
+                    ),
+                  ),
+                ),
               ),
-              title: Text('EFFACLAR DUO 40ML'),
-              subtitle: Text('Price: ฿990'),
-              trailing: Icon(Icons.plus_one),
-              onTap: () {
-              total += price2;
-              final snackBar = SnackBar(content: Text('total Price: $total'));
-              Scaffold.of(context).showSnackBar(snackBar);
-            },
-            ),),
-            Container(
-             height: 70,
-            color: Colors.cyan[200],
-             child: ListTile(
-              leading: CircleAvatar(
-                backgroundImage: AssetImage('assets/product/3.png'),
+              Container(
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 15),
+                  height: MediaQuery.of(context).size.height * 0.16,
+                  child: Card(
+                    color: Colors.red[200],
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
+                    elevation: 8,
+                    child: InkWell(
+                      onTap:  () {
+                        Navigator.push(context,MaterialPageRoute(builder: (context){
+                          return MyApp6();
+                        },),);
+                        },
+                    child: Container(
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage('assets/product/15.png'),
+                        ),
+                        title: Text('EFFACLAR SERUM 30ML'),
+                        subtitle: Text('Price: ฿1,300'),
+                        //      trailing: Icon(Icons.add),
+                       
+                          //    total += price15;
+                          //   final snackBar = SnackBar(content: Text('total Price: $total'));
+                          //   Scaffold.of(context).showSnackBar(snackBar);
+                      ),
+                      ),
+                    ),
+                  ),
+                ),
               ),
-              title: Text('EFFACLAR DUO(+) SPF30 40ML'),
-              subtitle: Text('Price: ฿1,190'),
-              trailing: Icon(Icons.plus_one),
-              onTap: () {
-              total += price3;
-              final snackBar = SnackBar(content: Text('total Price: $total'));
-              Scaffold.of(context).showSnackBar(snackBar);
-             },
-            ),),
-            Container(
-             height: 70,
-            color: Colors.cyan[300],
-             child:
-             ListTile(
-               leading: CircleAvatar(
-                 backgroundImage: AssetImage('assets/product/4.png'),
-               ),
-              title: Text('Anthelios Drytouch Cream SPF50+ 50ML'),
-              subtitle: Text('Price: ฿1,300'),
-              trailing: Icon(Icons.plus_one),
-              onTap: () {
-              total += price4;
-              final snackBar = SnackBar(content: Text('total Price: $total'));
-              Scaffold.of(context).showSnackBar(snackBar);
-            },
-            ),),
-            Container(
-             height: 70,
-            color: Colors.cyan[400],
-             child:
-             ListTile(
-               leading: CircleAvatar(
-                 backgroundImage: AssetImage('assets/product/5.png'),
-               ),
-              title: Text('Anthelios Shaka Fluid SPF50+ 50ML'),
-              subtitle: Text('Price: ฿1,400'),
-              trailing: Icon(Icons.plus_one),
-              onTap: () {
-              total += price5;
-              final snackBar = SnackBar(content: Text('total Price: $total'));
-              Scaffold.of(context).showSnackBar(snackBar);
-            },
-            ),),
-            Container(
-             height: 70,
-            color: Colors.cyan,
-             child:
-             ListTile(
-               leading: CircleAvatar(
-                 backgroundImage: AssetImage('assets/product/6.png'),
-               ),
-              title: Text('Anthelios Ultra Comfort SPF50+ 50ML'),
-              subtitle: Text('Price: ฿1,300'),
-              trailing: Icon(Icons.plus_one),
-              onTap: () {
-              total += price6;
-              final snackBar = SnackBar(content: Text('total Price: $total'));
-              Scaffold.of(context).showSnackBar(snackBar);
-            },
-            ),),
-            Container(
-             height: 70,
-            color: Colors.cyan[600],
-             child:
-             ListTile(
-               leading: CircleAvatar(
-                 backgroundImage: AssetImage('assets/product/7.png'),
-               ),
-              title: Text('Anthelios XI SPF 50+ Lotion 100ML'),
-              subtitle: Text('Price: ฿1,100'),
-              trailing: Icon(Icons.plus_one),
-              onTap: () {
-              total += price7;
-              final snackBar = SnackBar(content: Text('total Price: $total'));
-              Scaffold.of(context).showSnackBar(snackBar);
-            },
-            ),),
-            Container(
-             height: 70,
-            color: Colors.cyan[700],
-             child:
-             ListTile(
-               leading: CircleAvatar(
-                 backgroundImage: AssetImage('assets/product/8.png'),
-               ),
-              title: Text('EFL MICELLAR WATER OILY SKIN 100ML'),
-              subtitle: Text('Price: ฿400'),
-              trailing: Icon(Icons.plus_one),
-              onTap: () {
-              total += price8;
-              final snackBar = SnackBar(content: Text('total Price: $total'));
-              Scaffold.of(context).showSnackBar(snackBar);
-            },
-            ),),
-            Container(
-             height: 70,
-            color: Colors.cyan[800],
-             child:
-             ListTile(
-               leading: CircleAvatar(
-                 backgroundImage: AssetImage('assets/product/9.png'),
-               ),
-              title: Text('EFFACLAR DUO(+) 7.5ML'),
-              subtitle: Text('Price: ฿199'),
-              trailing: Icon(Icons.plus_one),
-              onTap: () {
-              total += price9;
-              final snackBar = SnackBar(content: Text('total Price: $total'));
-              Scaffold.of(context).showSnackBar(snackBar);
-            },
-            ),),
-            Container(
-             height: 70,
-            color: Colors.cyan[900],
-             child:
-             ListTile(
-               leading: CircleAvatar(
-                 backgroundImage: AssetImage('assets/product/10.png'),
-               ),
-              title: Text('THERMAL SPRING WATER 100ML'),
-              subtitle: Text("Price: ฿310"),
-              trailing: Icon(Icons.plus_one),
-              onTap: () {
-              total += price10;
-              final snackBar = SnackBar(content: Text('total Price: $total'));
-              Scaffold.of(context).showSnackBar(snackBar);
-            },
-            ),),
-            Container(
-             height: 70,
-            color: Colors.cyan[900],
-             child:
-             ListTile(
-               leading: CircleAvatar(
-                 backgroundImage: AssetImage('assets/product/11.png'),
-               ),
-              title: Text('Invisible Spray SPF 50+ 200ML'),
-              subtitle: Text("Price: ฿1,300"),
-              trailing: Icon(Icons.plus_one),
-              onTap: () {
-              total += price11;
-              final snackBar = SnackBar(content: Text('total Price: $total'));
-              Scaffold.of(context).showSnackBar(snackBar);
-            },
-            ),),
-            Container(
-             height: 70,
-            color: Colors.blueGrey[700],
-             child:
-             ListTile(
-               leading: CircleAvatar(
-                 backgroundImage: AssetImage('assets/product/12.png'),
-               ),
-              title: Text('REDERMIC 40ML'),
-              subtitle: Text('Price: ฿2,100'),
-              trailing: Icon(Icons.plus_one),
-              onTap: () {
-              total += price12;
-              final snackBar = SnackBar(content: Text('total Price: $total'));
-              Scaffold.of(context).showSnackBar(snackBar);
-            },
-            ),),
-            Container(
-             height: 70,
-            color: Colors.blueGrey[600],
-             child:
-             ListTile(
-               leading: CircleAvatar(
-                 backgroundImage: AssetImage('assets/product/13.png'),
-               ),
-              title: Text('EFFACLAR PURIFYING GEL 200ML'),
-              subtitle: Text('Price: ฿890'),
-              trailing: Icon(Icons.plus_one),
-              onTap: () {
-              total += price13;
-              final snackBar = SnackBar(content: Text('total Price: $total'));
-              Scaffold.of(context).showSnackBar(snackBar);
-            },
-            ),),
-            Container(
-             height: 70,
-            color: Colors.blueGrey,
-             child: ListTile(
-               leading: CircleAvatar(
-                 backgroundImage: AssetImage('assets/product/14.png'),
-               ),
-              title: Text('EFFACLAR PURIFYING GEL 400ML'),
-              subtitle: Text('Price: ฿1,200'),
-              trailing: Icon(Icons.plus_one),
-              onTap: () {
-              total += price14;
-              final snackBar = SnackBar(content: Text('total Price: $total'));
-              Scaffold.of(context).showSnackBar(snackBar);
-            },
-            ),),
-            Container(
-             height: 70,
-            color: Colors.blueGrey[400],
-             child:
-             ListTile(
-               leading: CircleAvatar(
-                 backgroundImage: AssetImage('assets/product/15.png'),
-               ),
-              title: Text('EFFACLAR SERUM 30ML'),
-              subtitle: Text('Price: ฿1,300'),
-              trailing: Icon(Icons.plus_one),
-              onTap: () {
-              total += price15;
-              final snackBar = SnackBar(content: Text('total Price: $total'));
-              Scaffold.of(context).showSnackBar(snackBar);
-            },
-            ),),
-          ],
-        ).toList(),
-
-      );
-      
-
-   
-    }
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
