@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hw4/thelastpage.dart';
 
       int total =  0;
       int price1 = 290;
@@ -14,10 +15,11 @@ class MyApp2 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Back to menu'),
+        
       ),
      body: Center(
           
-          child: 
+                      child: 
           ButtonBar(
             alignment: MainAxisAlignment.center,
             children: <Widget>[
@@ -42,11 +44,23 @@ class MyApp2 extends StatelessWidget {
                 color: Colors.red[300],
                 child: Text('drop', style: TextStyle(color: Colors.white),),
               ),
-              //Text('total Price: $total'),
 
+              Text('total Price: $total'),
+                 RaisedButton(
+                onPressed: () => {
+                   Navigator.push(context,MaterialPageRoute(builder: (context){
+                          return Cart1('$total');
+                   },),)
+                },
+                color: Colors.purple,
+                child: Text('Paying', style: TextStyle(color: Colors.white),),
+              ),
+            
             ],
-          )
-        ),
+          ),
+          ),
+          
+        
       );
   }
   
@@ -89,6 +103,17 @@ class MyApp3 extends StatelessWidget {
                 color: Colors.red[300],
                 child: Text('drop', style: TextStyle(color: Colors.white),),
               ),
+                            Text('total Price: $total'),
+                             RaisedButton(
+                onPressed: () => {
+                   Navigator.push(context,MaterialPageRoute(builder: (context){
+                          return Cart1('$total');
+                   },),)
+                },
+                color: Colors.purple,
+                child: Text('Paying', style: TextStyle(color: Colors.white),),
+              ),
+
             ],
           )
         ),
@@ -133,6 +158,17 @@ class MyApp4 extends StatelessWidget {
                 color: Colors.red[300],
                 child: Text('drop', style: TextStyle(color: Colors.white),),
               ),
+                            Text('total Price: $total'),
+                              RaisedButton(
+                onPressed: () => {
+                   Navigator.push(context,MaterialPageRoute(builder: (context){
+                          return Cart1('$total');
+                   },),)
+                },
+                color: Colors.purple,
+                child: Text('Paying', style: TextStyle(color: Colors.white),),
+              ),
+
             ],
           )
         ),
@@ -177,6 +213,17 @@ class MyApp5 extends StatelessWidget {
                 color: Colors.red[300],
                 child: Text('drop', style: TextStyle(color: Colors.white),),
               ),
+                            Text('total Price: $total'),
+                              RaisedButton(
+                onPressed: () => {
+                   Navigator.push(context,MaterialPageRoute(builder: (context){
+                          return Cart1('$total');
+                   },),)
+                },
+                color: Colors.purple,
+                child: Text('Paying', style: TextStyle(color: Colors.white),),
+              ),
+
             ],
           )
         ),
@@ -222,6 +269,18 @@ class MyApp6 extends StatelessWidget {
                 color: Colors.red[300],
                 child: Text('drop', style: TextStyle(color: Colors.white),),
               ),
+                            Text('total Price: $total'),
+
+                RaisedButton(
+                onPressed: () => {
+                   Navigator.push(context,MaterialPageRoute(builder: (context){
+                          return Cart1('$total');
+                   },),)
+                },
+                color: Colors.purple,
+                child: Text('Paying', style: TextStyle(color: Colors.white),),
+              ),
+
             ],
           )
         ),
