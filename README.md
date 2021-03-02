@@ -13,6 +13,4 @@
 ![picture](https://github.com/snoopydodo/skincare-application/blob/main/assets/product/interface3.png)
 ภาพนี้คือ interface สำหรับลูกค้า ที่กดชำระเงิน หากกดปุ่มแดงสุดท้าย ระบบจะเปลี่ยนเป็น 0 ทันที
 
-![video](https://github.com/snoopydodo/skincare-application/blob/main/assets/product/video.mp4)
-วิดิโอตัวอย่าง
 
