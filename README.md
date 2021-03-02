@@ -3,8 +3,16 @@
 
 เ็นการเขียน Application ในรูปแบบ ภาษา Dart โดยใช้ Flutter 
 ซึ่งภายในแอพคลิเคชั่นใช้ Card และ Navigate เป็นหลัก
+
 ![picture](https://github.com/snoopydodo/skincare-application/blob/main/assets/product/interface1.png)
+ภาพนี้คือ interface หน้าแรกของshopping Application
 
+![picture](https://github.com/snoopydodo/skincare-application/blob/main/assets/product/interface2.png)
+ภาพนี้คือ interface สำหรับลูกค้าเลือกซื้อสินค้า สามารถ Add, Drop สินค้าตามที่ต้องการ
 
-https://user-images.githubusercontent.com/69661632/109697306-9ba2b100-7bc0-11eb-9a44-699c386bb124.mp4
+![picture](https://github.com/snoopydodo/skincare-application/blob/main/assets/product/interface3.png)
+ภาพนี้คือ interface สำหรับลูกค้า ที่กดชำระเงิน หากกดปุ่มแดงสุดท้าย ระบบจะเปลี่ยนเป็น 0 ทันที
+
+![video](https://github.com/snoopydodo/skincare-application/blob/main/assets/product/video.mp4)
+วิดิโอตัวอย่าง
 
